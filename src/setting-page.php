@@ -27,7 +27,7 @@ function github_actions_settings_page()
                 </tr>
                 <tr>
                     <th>Event type</th>
-                    <td><input type="password" name="github_event_type" id="github_event_type" value="<?= esc_attr(get_option('github_event_type')); ?>" required="required"></td>
+                    <td><input type="text" name="github_event_type" id="github_event_type" value="<?= esc_attr(get_option('github_event_type')); ?>" required="required"></td>
                 </tr>
             </table>
             <?php submit_button('設定を保存', 'primary large', 'submit', true, array('tabindex' => '1')); ?>
